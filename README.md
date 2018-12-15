@@ -1,4 +1,3 @@
 # tdd-java
-TDD Best Practices Project
-Just a sandbox project
+Test Driven Development best practices - sandbox project
 
