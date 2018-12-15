@@ -64,9 +64,8 @@ public class StockManagementTests {
         String isbn = "0974514012";
         String locatorCode = stockManager.getLocatorCode(isbn);
 
-        verify(databaseService).lookup("0974514012");
-        verify(webService).lookup("0974514012");
-
+        verify(databaseService, atLeast(1)).lookup("0974514012"); //using atLeast()
+        verify(webService, atMost(1)).lookup("0974514012"); //using atMost()
     }
 
 
